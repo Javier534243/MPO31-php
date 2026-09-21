@@ -45,7 +45,7 @@
 }
 
 .logo {
-    width: 200px;
+    width: 300px;
     height: 100px;
     object-fit: cover;
 }
@@ -63,7 +63,7 @@
 }
 
 .background-color {
-    background-color: #03051b;
+    background-color: #212529;
 }
 
 .color-white {
@@ -77,4 +77,17 @@
 
 .height-min-height-70vh {
     height: 70vh;
+}
+
+
+.line-height {
+    line-height: 1.5;
+}
+
+.font-family {
+    font-family: sans-serif;
+}
+
+.width-700px {
+    width: 700px;
 }

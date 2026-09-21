@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="margin-0px">
+<body class="margin-0px font-family">
     <header class="flex aling-items-center justify-content-space-between background-color color-white padding-inline-40px gap-20px">
         <img src="imagenes/logo-fpllefia.png" alt="Logo fpllefia" class="logo">
         <?php 
@@ -24,8 +24,8 @@
                 echo(miNombre());
             ?>
         </div>
-        <div class="width-50percent">
-            <p>Me llamo Javier, estoy haciendo una web o app no se ni que és que no quiero pero tengo que hacer. No me gusta la programacion, ni el diseño web ni mucho menos el php pero aun asi voy a buscar informacion del php para poder terminar la practica porque me pide el anunciado que use la funcion phpInfo() y que llame a la funcion miNombre() que ahora mismo no se ni que és pero supongo que dentro de unos minutos lo sabre. No sé porque estoy haciendo esto si tampoco quiero trabajar de esto, pero igualmente me voy a buscar la vida como dice el anunciado.</p>
+        <div class="width-50percent line-height width-700px">
+            <p>Me llamo Javier López Chacón, estoy haciendo una web o app no se ni que és que no quiero pero tengo que hacer. No me gusta la programacion, ni el diseño web ni mucho menos el php pero aun asi voy a buscar informacion del php para poder terminar la practica porque me pide el anunciado que use la funcion phpInfo() y que llame a la funcion miNombre() que ahora mismo no se ni que és pero supongo que dentro de unos minutos lo sabre. No sé porque estoy haciendo esto si tampoco quiero trabajar de esto, pero igualmente me voy a buscar la vida como dice el anunciado.</p>
         </div>
     </main>
     <footer class="background-color color-white padding-inline-40px flex justify-content-center aling-items-center gap-20px flex-direction-column">
