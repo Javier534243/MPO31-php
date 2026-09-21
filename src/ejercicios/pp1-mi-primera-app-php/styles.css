@@ -1,0 +1,80 @@
+.flex {
+    display: flex;
+}
+
+.aling-items-center {
+    align-items: center;
+}
+
+.aling-items-start {
+    align-items: start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.gap-20px {
+    gap: 20px;
+}
+
+.padding-block-60px {
+    padding-block: 60px;
+}
+
+.border-radius-50percent {
+    border-radius: 50%
+}
+
+.padding-inline-40px {
+    padding-inline: 40px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+.font-size-3rem {
+    font-size: 3rem;
+}
+
+.width-50percent {
+    width: 50%;
+}
+
+.background-color {
+    background-color: #03051b;
+}
+
+.color-white {
+    color: white;
+}
+
+.margin-0px {
+    margin: 0;
+}
+
+
+.height-min-height-70vh {
+    height: 70vh;
+}
