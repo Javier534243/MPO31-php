@@ -19,5 +19,8 @@
     <div>
         <a href="ejercicio4/ejercicio4.php">Ejercicio 4: Divisors d'un nombre i verificació de nombre primer</a>
     </div>
+    <div>
+        <a href="ejercicio5/ejercicio5.php">Ejercicio 5: L’home del temps</a>
+    </div>
 </body>
 </html>
