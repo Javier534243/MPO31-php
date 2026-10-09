@@ -1,0 +1,86 @@
+
+/* ----------------- ESTILOS PAGINA DE INICIO ------------------ */
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.contendorPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: fit-content;
+}
+
+.contenedorHijo {
+  border-radius: 20px;
+  position: relative;
+}
+
+.contenedorHijo > div {
+    display: none;
+}
+
+.contenedorHijo > img {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+
+.contenedorHijo:hover > img {
+  filter: brightness(0.2);
+  transition: filter 0.2s ease-in-out;
+}
+
+.contenedorHijo:hover > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nombrePelicula {
+    color: rgb(255, 0, 0);
+}
+
+.botonVerHorarios {
+    color: #fff;
+    background-color: #f00;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.amarillo {
+    color: #c6d243;
+}
+
+.colorBlanco {
+    color: #fff;
+}
+
+.colorGris {
+    color: #777;
+}
+
+.botonesImagenes {
+    color: #f00;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #f00;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.alinearBotones {
+    display: flex;
+    justify-content: space-between;
+}

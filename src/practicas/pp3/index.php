@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ocine</title>
     <link rel="stylesheet" href="styles.css">
     <?php
     
@@ -32,6 +32,18 @@
           "genero" => "Thriller drama",
           "trailer" => '<iframe width="560" height="315" src="https://www.youtube.com/embed/XymFT_jUeXY?si=hKyopraPE6UH07ia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
         ],
+        [
+          "nombre" => "DIGGER",
+          "imagen" => "imgPeliculas/digger.jpeg",
+          "horarios" => ["19:45","22:15"],
+          "sinopsis" => "El hombre más poderoso del mundo se embarca en una misión frenética para demostrar que es el salvador de la humanidad antes de que el desastre que ha desatado lo destruya todo.",
+          "duracion" => 128,
+          "director" => "Fernando González Molina",
+          "actores" => ["Tom Cruise","John Goodman"," Sandra Hüller"],
+          "clasificacion" => 16,
+          "genero" => "Aventuras",
+          "trailer" => '<iframe width="560" height="315" src="https://www.youtube.com/embed/4jNrucYsh4A?si=TEAtKRXMEJ4d9IXS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+        ],
     ]
 
     ?>
@@ -39,7 +51,25 @@
 <body>
     <header></header>
     <main>
-        
+        <div class="contendorPadre">
+            <?php foreach($peliculas as $p): ?>
+                <div class="contenedorHijo">
+                    <img src="<?= $p["imagen"] ?>" alt="imagen <?= $p["nombre"] ?>">
+                    <div class="">
+                        <div class="nombrePelicula"><?= $p["nombre"] ?></div>
+                        <div><a href="" class="botonVerHorarios">VER HORARIOS</a></div>
+                        <div>
+                            <div class="colorBlanco">Clasificación: <span class="amarillo"><?= $p['clasificacion'] ?> años</span></div>
+                            <div class="colorGris"><?= $p['genero'] ?></div>
+                        </div>
+                        <div class="alinearBotones">
+                            <a href="" class="botonesImagenes">TRAILER</a>
+                            <a href="" class="botonesImagenes">INFO</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </main>
     <footer></footer>
 </body>
