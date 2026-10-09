@@ -64,7 +64,7 @@
                         </div>
                         <div class="alinearBotones">
                             <a href="" class="botonesImagenes">TRAILER</a>
-                            <a href="" class="botonesImagenes">INFO</a>
+                            <a href="detall.php?$nombre=<?= $p["nombre"] ?>&imagen=<?= $p["imagen"] ?>&sinopsis=<?= $p["sinopsis"] ?>&duracion=<?= $p["duracion"] ?>&clasificacion=<?= $p["clasificacion"] ?>&genero=<?= $p["genero"] ?>" class="botonesImagenes">INFO</a>
                         </div>
                     </div>
                 </div>
