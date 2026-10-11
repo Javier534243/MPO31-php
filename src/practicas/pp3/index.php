@@ -81,6 +81,30 @@
           "genero" => "Thriller",
           "trailer" => "https://www.youtube.com/embed/cNbAPdz04UE?si=nlysbrrKAu5mBvAi"
         ],
+        [
+          "nombre" => "En el corazón de la bestia",
+          "imagen" => "imgPeliculas/corazon.jpeg",
+          "horarios" => ["12:15","20:30","18:30","22:30"],
+          "sinopsis" => "Tras sobrevivir a un brutal accidente aéreo, un oficial de Fuerzas Especiales y su perro de combate quedan atrapados en el corazón indomable de Alaska. Frente a una naturaleza implacable, ambos deberán luchar al límite por sobrevivir. Dirigida por David Ayer, EN EL CORAZÓN DE LA BESTIA es un intenso y emocionante thriller de aventuras sobre lealtad, coraje y el vínculo inquebrantable entre un soldado y su compañero más fiel en su mayor desafío.",
+          "duracion" => 101,
+          "director" => "David Ayer",
+          "actores" => ["Brad Pitt", "J.K. Simmons", "Anna Lambe"],
+          "clasificacion" => "12 años",
+          "genero" => "Acción",
+          "trailer" => "https://www.youtube.com/embed/Rh24D89hFMg?si=7_E-11AHgbL_Fb1s",
+        ],
+        [
+          "nombre" => "Escape room 2",
+          "imagen" => "imgPeliculas/escape.jpeg",
+          "horarios" => ["12:15","20:30","22:20"],
+          "sinopsis" => "Cinco años después, Edu, Marina, Viky y Rai vuelven a coincidir misteriosamente en un nuevo local de moda situado en lo alto de la montaña de Montjuïc, donde antiguamente se encontraba el parque de atracciones. No tardarán en darse cuenta de que aquel establecimiento no es lo que parece. Pronto irán a parar a una antigua atracción, un túnel del terror que había quedado sepultado, donde aparece un contador acompañado de un mensaje amenazador que les resulta inquietantemente familiar: tienen 60 minutos para salir o morirán.",
+          "duracion" => 88,
+          "director" => "Hèctor Claramunt",
+          "actores" => ["Joel Joan", "Ivan Massagué", "Paula Vives", "Mònica Pérez"],
+          "clasificacion" => "",
+          "genero" => "Comèdia",
+          "trailer" => "https://www.youtube.com/embed/LKipBN8bSwk?si=TwWYfyDQrLgHAjU7",
+        ],
     ]
 
     ?>
@@ -121,7 +145,7 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="alinearNavegador">
             <div>
                 <img src="imgPeliculas/logoPagina.png" alt="logo de pagina">
             </div>

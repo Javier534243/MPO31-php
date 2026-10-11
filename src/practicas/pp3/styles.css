@@ -1,7 +1,13 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
 /* --------------------- ESTILOS NAV ---------------------- */
 
 .quitarPunto {
     list-style: none;
+    padding: 0;
 }
 
 .texto-nav {
@@ -9,12 +15,13 @@
     text-decoration: none;
 }
 
-/* ----------------- ESTILOS PAGINA DE INICIO ------------------ */
-
-* {
-    font-family: sans-serif;
-    box-sizing: border-box;
+.alinearNavegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* ----------------- ESTILOS PAGINA DE INICIO ------------------ */
 
 .contendorPadre {
   display: grid;
@@ -39,7 +46,7 @@
 
 .alinear-contenedor {
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 
 .estilo-imagen {
