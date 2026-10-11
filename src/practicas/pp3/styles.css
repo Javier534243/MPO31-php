@@ -1,3 +1,13 @@
+/* --------------------- ESTILOS NAV ---------------------- */
+
+.quitarPunto {
+    list-style: none;
+}
+
+.texto-nav {
+    color: #333;
+    text-decoration: none;
+}
 
 /* ----------------- ESTILOS PAGINA DE INICIO ------------------ */
 
@@ -22,9 +32,22 @@
     display: none;
 }
 
-.contenedorHijo > img {
-  border-radius: 10px;
+.hidden {
+    display: none;
+
+}
+
+.alinear-contenedor {
+    display: flex;
+    gap: 20px
+}
+
+.estilo-imagen {
+    border-radius: 10px;
   box-shadow: 0 0 5px #000;
+  height: 100%;
+  width: 210px;
+  object-fit: cover;
 }
 
 .contenedorHijo:hover > img {
@@ -83,4 +106,18 @@
 .alinearBotones {
     display: flex;
     justify-content: space-between;
+}
+
+/* --------------- PAGINA INFO --------------- */
+
+.boton-trailer {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.boton-trailer:active ~ .hidden {
+    display: block;
 }
