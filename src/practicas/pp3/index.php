@@ -105,7 +105,7 @@
           "genero" => "Comèdia",
           "trailer" => "https://www.youtube.com/embed/LKipBN8bSwk?si=TwWYfyDQrLgHAjU7",
         ],
-    ]
+    ];
 
     ?>
 </head>
@@ -180,6 +180,13 @@
             </div>
             <div class="contendorPadre padding-inline-40px">
                 <?php foreach($peliculas as $p): ?>
+                    <?php 
+                        $datos_enlace = $p;
+                        unset($datos_enlace['sinopsis'], $datos_enlace['trailer']);
+
+                        $query_string = http_build_query($datos_enlace);
+
+                        ?>
                     <div class="contenedorHijo">
                         <img class="estilo-imagen" src="<?= $p["imagen"] ?>" alt="imagen <?= $p["nombre"] ?>">
                         <div class="">
@@ -191,7 +198,7 @@
                             </div>
                             <div class="alinearBotones">
                                 <a href="" class="botonesImagenes">TRAILER</a>
-                                <a href="detall.php?nombre=<?= $p["nombre"] ?>&imagen=<?= $p["imagen"] ?>&sinopsis=<?= $p["sinopsis"] ?>&duracion=<?= $p["duracion"] ?>&director=<?= $p["director"] ?>&clasificacion=<?= $p["clasificacion"] ?>&genero=<?= $p["genero"] ?>&trailer=<?= urlencode($p["trailer"])?>&horarios=<?= urlencode(implode(',', $p["horarios"]))?>" class="botonesImagenes">INFO</a>
+                                <a href="detall.php?<?= $query_string ?>" class="botonesImagenes">INFO</a>
                             </div>
                         </div>
                     </div>

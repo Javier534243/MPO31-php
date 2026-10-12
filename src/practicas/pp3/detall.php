@@ -16,7 +16,7 @@
             $clasificacion = $_GET["clasificacion"];
             $genero = $_GET["genero"];
             $trailer = $_GET["trailer"];
-            $horarios = explode(',',$_GET["horarios"]);
+            $horarios = $_GET["horarios"];
         }
     ?>
 </head>
