@@ -17,7 +17,7 @@
           "duracion" => 102,
           "director" => "Dave Green",
           "actores" => [],
-          "clasificacion" => 7,
+          "clasificacion" => "7 anys",
           "genero" => "comèdia",
           "trailer" => "https://www.youtube.com/embed/soYBxkggwKQ?si=ZImaOAh1urFjk-yU"
         ],
@@ -110,8 +110,8 @@
     ?>
 </head>
 <body>
-    <nav>
-        <div>
+    <nav class="padding-inline-40px">
+        <div class="alinearIzquierda">
             <div>
                 <div>
                     <label for="idioma"><i class="fa-solid fa-globe"></i></label>
@@ -123,23 +123,23 @@
             <div>
                 <ul class="alinear-contenedor quitarPunto">
                     <li>
-                        <a class="texto-nav" href="#">
-                            <i class="fa-brands fa-facebook"></i>
+                        <a class="texto-nav linkIconos" href="#">
+                            <i class="fa-brands fa-facebook iconos"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="texto-nav" href="#">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a class="texto-nav linkIconos" href="#">
+                            <i class="fa-brands fa-instagram iconos"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="texto-nav" href="#">
-                            <i class="fa-brands fa-x-twitter"></i>
+                        <a class="texto-nav linkIconos" href="#">
+                            <i class="fa-brands fa-x-twitter iconos"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="texto-nav" href="#">
-                            <i class="fa-brands fa-tiktok"></i>
+                        <a class="texto-nav linkIconos" href="#">
+                            <i class="fa-brands fa-tiktok iconos"></i>
                         </a>
                     </li>
                 </ul>
@@ -170,30 +170,34 @@
             </div>
         </div>
     </nav>
-    <header></header>
-    <main>
-        <div>
-            <h1>Cartellera</h1>
-        </div>
-        <div class="contendorPadre">
-            <?php foreach($peliculas as $p): ?>
-                <div class="contenedorHijo">
-                    <img class="estilo-imagen" src="<?= $p["imagen"] ?>" alt="imagen <?= $p["nombre"] ?>">
-                    <div class="">
-                        <div class="nombrePelicula"><?= $p["nombre"] ?></div>
-                        <div><a href="" class="botonVerHorarios">VER HORARIOS</a></div>
-                        <div>
-                            <div class="colorBlanco">Clasificación: <span class="amarillo"><?= $p['clasificacion'] ?></span></div>
-                            <div class="colorGris"><?= $p['genero'] ?></div>
-                        </div>
-                        <div class="alinearBotones">
-                            <a href="" class="botonesImagenes">TRAILER</a>
-                            <a href="detall.php?nombre=<?= $p["nombre"] ?>&imagen=<?= $p["imagen"] ?>&sinopsis=<?= $p["sinopsis"] ?>&duracion=<?= $p["duracion"] ?>&director=<?= $p["director"] ?>&clasificacion=<?= $p["clasificacion"] ?>&genero=<?= $p["genero"] ?>&trailer=<?= urlencode($p["trailer"])?>" class="botonesImagenes">INFO</a>
+    <header class="">
+        <img class="width-100percent" src="imgPeliculas/headerImagen.jpg" alt="header imagen">
+    </header>
+    <main class="">
+        <section class="centrar-contenidoCentro max-width-1200px margin-inline-auto">
+            <div class="text-left width-100percent border-bottom-title margin-bottom-20px">
+                <h1 class="text-left">Cartellera</h1>
+            </div>
+            <div class="contendorPadre padding-inline-40px">
+                <?php foreach($peliculas as $p): ?>
+                    <div class="contenedorHijo">
+                        <img class="estilo-imagen" src="<?= $p["imagen"] ?>" alt="imagen <?= $p["nombre"] ?>">
+                        <div class="">
+                            <div class="nombrePelicula"><?= $p["nombre"] ?></div>
+                            <div><a href="" class="botonVerHorarios">VER HORARIOS</a></div>
+                            <div>
+                                <div class="colorBlanco">Clasificación: <span class="amarillo"><?= $p['clasificacion'] ?></span></div>
+                                <div class="colorGris"><?= $p['genero'] ?></div>
+                            </div>
+                            <div class="alinearBotones">
+                                <a href="" class="botonesImagenes">TRAILER</a>
+                                <a href="detall.php?nombre=<?= $p["nombre"] ?>&imagen=<?= $p["imagen"] ?>&sinopsis=<?= $p["sinopsis"] ?>&duracion=<?= $p["duracion"] ?>&director=<?= $p["director"] ?>&clasificacion=<?= $p["clasificacion"] ?>&genero=<?= $p["genero"] ?>&trailer=<?= urlencode($p["trailer"])?>&horarios=<?= urlencode(implode(',', $p["horarios"]))?>" class="botonesImagenes">INFO</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
