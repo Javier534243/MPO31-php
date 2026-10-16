@@ -10,15 +10,15 @@
     <form action="carpetas/index.php" method="post">
         <div>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" value="Javier">
         </div>
         <div>
             <label for="telefono"></label>
-            <input type="tel" id="telefono" name="telefono">
+            <input type="tel" id="telefono" name="telefono" value="23232323">
         </div>
         <div>
             <label for="fotoPerfil"></label>
-            <textarea name="fotoPerfil" id="fotoPerfil" name="fotoPerfil"></textarea>
+            <textarea name="fotoPerfil" id="fotoPerfil" name="fotoPerfil" value="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Imagen3-245003649.jpg?fit=960%2C720?w=800"></textarea>
         </div> 
         <button type="submit">Enviar</button>
     </form>

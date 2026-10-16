@@ -17,15 +17,19 @@
         $telefono = "No se sabe";
     }
     if (isset($_POST['fotoPerfil'])) {
-        $fotoPerfil = $_POST['fotoPerfil']
+        $fotoPerfil = $_POST['fotoPerfil'];
     } else {
-        $fotoPerfil = "No se sabe"
+        $fotoPerfil = "No se sabe";
     }
+
+    
     
     ?>
 </head>
 <body>
-    <h1>Resultados</h1>
+    <?= include 'header.php'?>
+    <main></main>
+    <?= include 'footer.php' ?>
     
 </body>
 </html>
