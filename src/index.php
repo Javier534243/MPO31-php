@@ -13,6 +13,7 @@
     <div><a href="practicas/pp1-mi-primera-app-php/index.php">Pp1. Primera aplicació en PHP</a></div>
     <div><a href="practicas/pp2/index.php">Pp2. Estructures de bucles i condicionals</a></div>
     <div><a href="practicas/pp3/index.php">Pp3. Llistes simples, associatives i multidimensionals per mostrar la informació </a></div>
+    <div><a href="practicas/pp4/inicio.php">Pp4. Vamos al Mercadona</a></div>
     <h2>Teoria</h2>
 </body>
 </html>

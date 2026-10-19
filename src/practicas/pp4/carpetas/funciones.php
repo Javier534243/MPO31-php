@@ -1,31 +1,27 @@
 <?php
 
-include 'productos.php';
-
-generarTablaProductos($productos): ?> 
-    <table>
-        <?php foreach($productos as $p): ?>
-            <tr>
-                <td>
-                    <?= $p['nombre'] ?>
-                </td>
-                <td>
-                    <?= number_format($p['precio']) ?>
-                </td>
-                <td>
-                    <?= $p['disponiblidad'] ? "En stock" : "Agotado" ?>
-                </td>
-            </tr>
-        <? endforeach; ?>
-    </table>
+function generarTablaProductos($productos)
+{
+    echo '<table>';
+    foreach ($productos as $producto) {
+        echo '<tr class="'.  ($producto['Disponiblidad'] ? '' : 'agotado') .'">';
+        echo '<td>' . ($producto['Nombre']) . '</td>';
+        echo '<td>' . number_format($producto['Precio']) . '</td>';
+        echo '<td>' . ($producto['Disponiblidad'] ? 'En stock' : 'Agotado') . '</td>';
+        echo '<td>' . ($producto['Descripcion']) . '</td>';
+        echo '<td>' . ($producto['Categoria']) . '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+}
 
 
 
-<?php
-include '../inicio.php';
-muestraInfoContacto($nombre, $telefono, $foto): ?>
-    <div>
-        <p>Nombre: <?= $nombre ?></p>
-        <p>Telefono: <?= $telefono ?></p>
-        <p><img src="<?= $fotoPerfil ?>" alt="imagen"></p>
-    </div>
+function muestraInfoContacto($nombre, $telefono, $fotoPerfil)
+{
+    echo '<div>';
+    echo '<p>Nombre: ' .($nombre) . '</p>';
+    echo '<p>Telefono: ' . ($telefono) . '</p>';
+    echo '<p><img src="' . ($fotoPerfil) . '" alt="imagen"></p>';
+    echo '</div>';
+}
